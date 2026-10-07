@@ -1,0 +1,294 @@
+[gd_scene load_steps=18 format=3 uid="uid://bj3l61pwxanm2"]
+
+[ext_resource type="Script" uid="uid://d0lal4qt08gbe" path="res://scripts/main_menu.gd" id="1_bqqt6"]
+[ext_resource type="Texture2D" uid="uid://bawfjea10he5d" path="res://assets/Legacy-Fantasy - High Forest 2.3/Background/Screenshot 2026-02-17 222519.png" id="2_8ln24"]
+[ext_resource type="FontFile" uid="uid://cyy6vt0cfq8vj" path="res://assets/Fonts/Sweety Rasty.otf" id="2_ekxnf"]
+[ext_resource type="Script" uid="uid://duk5fgjudiy2r" path="res://scripts/audio_control.gd" id="5_8ln24"]
+[ext_resource type="PackedScene" uid="uid://b661tksjkjjxf" path="res://scenes/music_managers.tscn" id="5_rtw2f"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vue75"]
+texture = ExtResource("2_8ln24")
+modulate_color = Color(0.88049585, 0.8804958, 0.88049585, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vue75"]
+bg_color = Color(0.48634708, 0.33637697, 0.2728082, 0.54901963)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.9529412, 0.8862745, 0.7411765, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rtw2f"]
+bg_color = Color(0.34012637, 0.22767037, 0.17993978, 0.54901963)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.9529412, 0.8862745, 0.7411765, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oa1go"]
+bg_color = Color(0.60834116, 0.43263543, 0.3561741, 0.54901963)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.9529412, 0.8862745, 0.7411765, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ekxnf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tbmy8"]
+bg_color = Color(0.34012637, 0.22767037, 0.17993978, 0.54901963)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.9529412, 0.8862745, 0.7411765, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jk1qb"]
+bg_color = Color(0.60834116, 0.43263543, 0.3561741, 0.54901963)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.9529412, 0.8862745, 0.7411765, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5dd4i"]
+bg_color = Color(0.34012637, 0.22767037, 0.17993978, 0.54901963)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.9529412, 0.8862745, 0.7411765, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lgwnu"]
+bg_color = Color(0.60834116, 0.43263543, 0.3561741, 0.54901963)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.9529412, 0.8862745, 0.7411765, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8ln24"]
+bg_color = Color(0.40560645, 0.2776074, 0.22075734, 0.54901963)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_wu84c"]
+color = Color(0.9529412, 0.8862745, 0.7411765, 1)
+thickness = 6
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_8ln24"]
+color = Color(0.20025542, 0.12128807, 0.08295388, 1)
+thickness = 6
+
+[node name="main_menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bqqt6")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_vue75")
+
+[node name="MainButtons" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -196.5
+offset_top = -57.25
+offset_right = 196.5
+offset_bottom = 133.25
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 17
+
+[node name="Start_Game_Btn" type="Button" parent="MainButtons"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.9529412, 0.8862745, 0.7411765, 1)
+theme_override_colors/font_focus_color = Color(0.9529412, 0.8862745, 0.7411765, 1)
+theme_override_colors/font_pressed_color = Color(0.9529412, 0.8862745, 0.7411765, 1)
+theme_override_colors/font_hover_color = Color(0.9529412, 0.8862745, 0.7411765, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_vue75")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_rtw2f")
+theme_override_styles/hover = SubResource("StyleBoxFlat_oa1go")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ekxnf")
+text = "Start Game"
+
+[node name="Settings_Btn" type="Button" parent="MainButtons"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.9529412, 0.8862745, 0.7411765, 1)
+theme_override_colors/font_focus_color = Color(0.9529412, 0.8862745, 0.7411765, 1)
+theme_override_colors/font_pressed_color = Color(0.9529412, 0.8862745, 0.7411765, 1)
+theme_override_colors/font_hover_color = Color(0.9529412, 0.8862745, 0.7411765, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_vue75")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_tbmy8")
+theme_override_styles/hover = SubResource("StyleBoxFlat_jk1qb")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ekxnf")
+text = "Settings"
+
+[node name="Exit_Btn" type="Button" parent="MainButtons"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.9529412, 0.8862745, 0.7411765, 1)
+theme_override_colors/font_focus_color = Color(0.9529412, 0.8862745, 0.7411765, 1)
+theme_override_colors/font_pressed_color = Color(0.9529412, 0.8862745, 0.7411765, 1)
+theme_override_colors/font_hover_color = Color(0.9529412, 0.8862745, 0.7411765, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_vue75")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_5dd4i")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lgwnu")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ekxnf")
+text = "Exit"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -328.5
+offset_top = -190.0
+offset_right = 328.5
+offset_bottom = -46.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.9529412, 0.8862745, 0.7411765, 1)
+theme_override_colors/font_shadow_color = Color(0.40784314, 0.27450982, 0.22352941, 1)
+theme_override_colors/font_outline_color = Color(0.2509804, 0.1254902, 0.03529412, 1)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("2_ekxnf")
+theme_override_font_sizes/font_size = 100
+text = "Arcane Wilds"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Options" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -247.5
+offset_top = -75.0
+offset_right = 247.5
+offset_bottom = 171.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_8ln24")
+
+[node name="Label" type="Label" parent="Options"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 85.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.9529412, 0.8862745, 0.7411765, 1)
+theme_override_font_sizes/font_size = 41
+text = "Settings"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Back" type="Button" parent="Options"]
+layout_mode = 0
+offset_left = 97.5
+offset_top = 156.0
+offset_right = 395.5
+offset_bottom = 206.0
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.9529412, 0.8862745, 0.7411765, 1)
+theme_override_colors/font_focus_color = Color(0.9529412, 0.8862745, 0.7411765, 1)
+theme_override_colors/font_pressed_color = Color(0.9529412, 0.8862745, 0.7411765, 1)
+theme_override_colors/font_hover_color = Color(0.9529412, 0.8862745, 0.7411765, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_vue75")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_5dd4i")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lgwnu")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ekxnf")
+text = "Back"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Options"]
+layout_mode = 0
+offset_left = 93.5
+offset_top = 100.0
+offset_right = 409.5
+offset_bottom = 140.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Options/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Label" type="Label" parent="Options/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9529412, 0.8862745, 0.7411765, 1)
+theme_override_font_sizes/font_size = 19
+text = "Music Volume"
+
+[node name="AudioControl" type="HSlider" parent="Options/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+theme_override_styles/slider = SubResource("StyleBoxLine_wu84c")
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_8ln24")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_8ln24")
+max_value = 1.0
+step = 0.05
+value = 1.0
+script = ExtResource("5_8ln24")
+
+[node name="Music_Manager" parent="." instance=ExtResource("5_rtw2f")]
+
+[connection signal="pressed" from="MainButtons/Start_Game_Btn" to="." method="_on_start_game_btn_pressed"]
+[connection signal="pressed" from="MainButtons/Settings_Btn" to="." method="_on_settings_btn_pressed"]
+[connection signal="pressed" from="MainButtons/Exit_Btn" to="." method="_on_exit_btn_pressed"]
+[connection signal="pressed" from="Options/Back" to="." method="_on_back_options_pressed"]
+[connection signal="value_changed" from="Options/VBoxContainer/HBoxContainer/AudioControl" to="Options/VBoxContainer/HBoxContainer/AudioControl" method="_on_value_changed"]

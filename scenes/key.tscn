@@ -1,0 +1,118 @@
+[gd_scene load_steps=26 format=3 uid="uid://6ecg3g1q0sws"]
+
+[ext_resource type="Script" uid="uid://bbxui5ndn8u5" path="res://scripts/key.gd" id="1_jcln5"]
+[ext_resource type="Texture2D" uid="uid://cdyti4eb0oadm" path="res://assets/Legacy-Fantasy - High Forest 2.3/collectibles/LIGHT GREEN/GEM 1 - LIGHT GREEN - 0000.png" id="2_ku6d0"]
+[ext_resource type="Texture2D" uid="uid://cf5lrqv75klnc" path="res://assets/Legacy-Fantasy - High Forest 2.3/collectibles/LIGHT GREEN/GEM 1 - LIGHT GREEN - 0001.png" id="3_1w6cg"]
+[ext_resource type="Texture2D" uid="uid://dh2mcc15h07pg" path="res://assets/Legacy-Fantasy - High Forest 2.3/collectibles/LIGHT GREEN/GEM 1 - LIGHT GREEN - 0002.png" id="4_fcqyd"]
+[ext_resource type="Texture2D" uid="uid://diyxck7lp68pk" path="res://assets/Legacy-Fantasy - High Forest 2.3/collectibles/LIGHT GREEN/GEM 1 - LIGHT GREEN - 0003.png" id="5_midqh"]
+[ext_resource type="Texture2D" uid="uid://c0ttnxyutwgem" path="res://assets/Legacy-Fantasy - High Forest 2.3/collectibles/LIGHT GREEN/GEM 1 - LIGHT GREEN - 0004.png" id="6_bu8ts"]
+[ext_resource type="Texture2D" uid="uid://baydahjayscwe" path="res://assets/Legacy-Fantasy - High Forest 2.3/collectibles/LIGHT GREEN/GEM 1 - LIGHT GREEN - 0005.png" id="7_4oglw"]
+[ext_resource type="Texture2D" uid="uid://cj4w2d4dlg1qn" path="res://assets/Legacy-Fantasy - High Forest 2.3/collectibles/LIGHT GREEN/GEM 1 - LIGHT GREEN - 0006.png" id="8_plm0p"]
+[ext_resource type="Texture2D" uid="uid://r5ieda1ysqsp" path="res://assets/Legacy-Fantasy - High Forest 2.3/collectibles/LIGHT GREEN/GEM 1 - LIGHT GREEN - 0007.png" id="9_11q70"]
+[ext_resource type="Texture2D" uid="uid://2knxmd8k30b2" path="res://assets/Legacy-Fantasy - High Forest 2.3/collectibles/LIGHT GREEN/GEM 1 - LIGHT GREEN - 0008.png" id="10_xrs3s"]
+[ext_resource type="Texture2D" uid="uid://dpiih4g0mfi6a" path="res://assets/Legacy-Fantasy - High Forest 2.3/collectibles/LIGHT GREEN/GEM 1 - LIGHT GREEN - 0009.png" id="11_aqh0b"]
+[ext_resource type="Texture2D" uid="uid://dfg8uqrykpswi" path="res://assets/Legacy-Fantasy - High Forest 2.3/collectibles/LIGHT GREEN/GEM 1 - LIGHT GREEN - 0010.png" id="12_fw5uf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_obeno"]
+atlas = ExtResource("2_ku6d0")
+region = Rect2(0, 0, 18, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_udwwn"]
+atlas = ExtResource("3_1w6cg")
+region = Rect2(0, 0, 18, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bmwd0"]
+atlas = ExtResource("4_fcqyd")
+region = Rect2(0, 0, 18, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tbsev"]
+atlas = ExtResource("5_midqh")
+region = Rect2(0, 0, 18, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c562q"]
+atlas = ExtResource("6_bu8ts")
+region = Rect2(0, 0, 18, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4j6cc"]
+atlas = ExtResource("7_4oglw")
+region = Rect2(0, 0, 18, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f82af"]
+atlas = ExtResource("8_plm0p")
+region = Rect2(0, 0, 18, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iqk5x"]
+atlas = ExtResource("9_11q70")
+region = Rect2(0, 0, 18, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_28oxv"]
+atlas = ExtResource("10_xrs3s")
+region = Rect2(0, 0, 18, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_abdr0"]
+atlas = ExtResource("11_aqh0b")
+region = Rect2(0, 0, 18, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_75jw1"]
+atlas = ExtResource("12_fw5uf")
+region = Rect2(0, 0, 18, 30)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ku6d0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_obeno")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_udwwn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bmwd0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tbsev")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c562q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4j6cc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f82af")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iqk5x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_28oxv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_abdr0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_75jw1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_brs3p"]
+radius = 6.0
+height = 28.0
+
+[node name="Emerald" type="Area2D"]
+collision_layer = 2
+script = ExtResource("1_jcln5")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_ku6d0")
+autoplay = "default"
+frame_progress = 0.48572302
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("CapsuleShape2D_brs3p")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

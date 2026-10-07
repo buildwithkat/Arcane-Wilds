@@ -1,0 +1,136 @@
+[gd_scene load_steps=8 format=3 uid="uid://c7cofx5nmi6s"]
+
+[ext_resource type="FontFile" uid="uid://cyy6vt0cfq8vj" path="res://assets/Fonts/Sweety Rasty.otf" id="1_8cckr"]
+[ext_resource type="Texture2D" uid="uid://bo03ae86y1hdg" path="res://assets/icons-set-game.png" id="3_4f3a0"]
+
+[sub_resource type="GDScript" id="GDScript_4qwmp"]
+script/source = "extends Control
+
+@onready var restart_button: Button = %restart
+
+func _on_restart_pressed():
+	get_tree().reload_current_scene()  # restart level
+
+func _on_main_menu_pressed() -> void:
+	get_tree().change_scene_to_file(\"res://scenes/main_menu.tscn\")
+
+func _on_exit_pressed() -> void:
+	get_tree().quit()
+"
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4f3a0"]
+bg_color = Color(0.9529412, 0.8862745, 0.7411765, 0.47843137)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xm5sl"]
+atlas = ExtResource("3_4f3a0")
+region = Rect2(980, 515, 486, 493)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_68ubr"]
+atlas = ExtResource("3_4f3a0")
+region = Rect2(93, 983, 478, 452)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_em3sq"]
+atlas = ExtResource("3_4f3a0")
+region = Rect2(1431, 976, 486, 493)
+
+[node name="WinPopup" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 722.0
+offset_bottom = 395.0
+script = SubResource("GDScript_4qwmp")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_4f3a0")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -345.0
+offset_top = -128.5
+offset_right = 345.0
+offset_bottom = 86.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.9529412, 0.8862745, 0.7411765, 1)
+theme_override_colors/font_shadow_color = Color(0.4094253, 0.27505207, 0.22278708, 1)
+theme_override_colors/font_outline_color = Color(0.2509804, 0.1254902, 0.03529412, 1)
+theme_override_constants/shadow_offset_x = 4
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/outline_size = 9
+theme_override_constants/shadow_outline_size = 7
+theme_override_fonts/font = ExtResource("1_8cckr")
+theme_override_font_sizes/font_size = 65
+text = "Victory!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="restart" type="Button" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -121.0
+offset_top = 12.5
+offset_right = -51.0
+offset_bottom = 124.5
+grow_horizontal = 2
+grow_vertical = 2
+icon = SubResource("AtlasTexture_xm5sl")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="MainMenu" type="Button" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -34.5
+offset_top = 12.0
+offset_right = 35.5
+offset_bottom = 124.0
+grow_horizontal = 2
+grow_vertical = 2
+icon = SubResource("AtlasTexture_68ubr")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="Exit" type="Button" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 53.5
+offset_top = 16.0
+offset_right = 123.5
+offset_bottom = 128.0
+grow_horizontal = 2
+grow_vertical = 2
+icon = SubResource("AtlasTexture_em3sq")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[connection signal="pressed" from="restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="MainMenu" to="." method="_on_main_menu_pressed"]

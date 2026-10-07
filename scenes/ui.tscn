@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://bmvqdm1lkq2qy"]
+
+[ext_resource type="Texture2D" uid="uid://dvojh4dvtmrt1" path="res://assets/Legacy-Fantasy - High Forest 2.3/collectibles/Apple Animation.png" id="1_nt7q6"]
+[ext_resource type="FontFile" uid="uid://bb2hc7683ibjd" path="res://assets/Fonts/Next Sunday.otf" id="2_x4jx1"]
+
+[node name="UI" type="CanvasLayer"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(20, 18)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_nt7q6")
+region_enabled = true
+region_rect = Rect2(0, 0, 18, 16)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 33.0
+offset_top = 12.0
+offset_right = 513.0
+offset_bottom = 35.0
+theme_override_colors/font_color = Color(0.9529412, 0.8862745, 0.7411765, 1)
+theme_override_fonts/font = ExtResource("2_x4jx1")
+theme_override_font_sizes/font_size = 20
+text = "0 "

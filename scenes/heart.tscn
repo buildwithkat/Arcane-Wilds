@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://bjrrvf7m2qaar"]
+
+[ext_resource type="Texture2D" uid="uid://dk1yay7bbmxvh" path="res://assets/Legacy-Fantasy - High Forest 2.3/collectibles/Royal Heart.png" id="1_v30as"]
+[ext_resource type="Script" uid="uid://tgscq12ydsty" path="res://scripts/heart.gd" id="1_ycbwg"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ycbwg"]
+radius = 8.062258
+
+[node name="Heart" type="Area2D"]
+script = ExtResource("1_ycbwg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-2.3749998, -12.125)
+scale = Vector2(1.0833334, 1.1309524)
+texture = ExtResource("1_v30as")
+region_enabled = true
+region_rect = Rect2(0, 0, 21, 21)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-3, -12)
+shape = SubResource("CircleShape2D_ycbwg")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

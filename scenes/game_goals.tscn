@@ -1,0 +1,421 @@
+[gd_scene load_steps=27 format=3 uid="uid://y47ns071arvu"]
+
+[ext_resource type="Script" uid="uid://ewanslcobiae" path="res://game_goals.gd" id="1_1611l"]
+[ext_resource type="Texture2D" uid="uid://ra1yqwin1de" path="res://assets/Legacy-Fantasy - High Forest 2.3/Background/Screenshot 2026-02-18 090019.png" id="1_ljs2m"]
+[ext_resource type="Texture2D" uid="uid://dvojh4dvtmrt1" path="res://assets/Legacy-Fantasy - High Forest 2.3/collectibles/Apple Animation.png" id="1_s6a58"]
+[ext_resource type="Texture2D" uid="uid://dfg8uqrykpswi" path="res://assets/Legacy-Fantasy - High Forest 2.3/collectibles/LIGHT GREEN/GEM 1 - LIGHT GREEN - 0010.png" id="2_wrhor"]
+[ext_resource type="Texture2D" uid="uid://cjxh64e5dbytg" path="res://assets/Legacy-Fantasy - High Forest 2.3/Mob/Snail/walk-Sheet.png" id="3_8c2mr"]
+[ext_resource type="FontFile" uid="uid://bb2hc7683ibjd" path="res://assets/Fonts/Next Sunday.otf" id="3_1611l"]
+[ext_resource type="Texture2D" uid="uid://belhmpgis1foc" path="res://assets/Legacy-Fantasy - High Forest 2.3/Mob/Orc_Warrior/Idle.png" id="4_g6gdi"]
+[ext_resource type="Texture2D" uid="uid://cknny6jk8h3ca" path="res://assets/Legacy-Fantasy - High Forest 2.3/Mob/Boar/Idle/Idle-Sheet.png" id="5_htehk"]
+[ext_resource type="Texture2D" uid="uid://dk1yay7bbmxvh" path="res://assets/Legacy-Fantasy - High Forest 2.3/collectibles/Royal Heart.png" id="6_m6p8m"]
+[ext_resource type="Texture2D" uid="uid://bxe4ek8d4tple" path="res://assets/Legacy-Fantasy - High Forest 2.3/Assets/spr_portal_strip8.png" id="7_ljs2m"]
+[ext_resource type="FontFile" uid="uid://cyy6vt0cfq8vj" path="res://assets/Fonts/Sweety Rasty.otf" id="8_uqjck"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mqqn0"]
+texture = ExtResource("1_ljs2m")
+modulate_color = Color(0.7553861, 0.75538605, 0.75538605, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1611l"]
+bg_color = Color(0.9529412, 0.8862745, 0.7411765, 0.49803922)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.40784314, 0.27450982, 0.22352941, 1)
+border_blend = true
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1syrm"]
+atlas = ExtResource("1_s6a58")
+region = Rect2(0, 0, 17, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g6gdi"]
+atlas = ExtResource("2_wrhor")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_htehk"]
+atlas = ExtResource("3_8c2mr")
+region = Rect2(0, 0, 49, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uqjck"]
+atlas = ExtResource("4_g6gdi")
+region = Rect2(0, 0, 90, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mqqn0"]
+atlas = ExtResource("5_htehk")
+region = Rect2(0, 0, 44, 32)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_men0r"]
+bg_color = Color(0.40784314, 0.27450982, 0.22352941, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s6a58"]
+bg_color = Color(0.335737, 0.22199288, 0.17848775, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wrhor"]
+bg_color = Color(0.49466437, 0.33936325, 0.2800189, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8c2mr"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_syj7s"]
+bg_color = Color(0.9529412, 0.8862745, 0.7411765, 0.49803922)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.40784314, 0.27450982, 0.22352941, 1)
+border_blend = true
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g6gdi"]
+bg_color = Color(0.9529412, 0.8862745, 0.7411765, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.2509804, 0.1254902, 0.03529412, 1)
+border_blend = true
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_color = Color(0.39131275, 0.26108563, 0.21458456, 1)
+shadow_size = 2
+shadow_offset = Vector2(1, 2)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a3hwb"]
+atlas = ExtResource("6_m6p8m")
+region = Rect2(0, 0, 21, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x5e0u"]
+atlas = ExtResource("7_ljs2m")
+region = Rect2(0, 0, 127, 128)
+
+[node name="Game_Goals" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = -4.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1611l")
+
+[node name="Canvas" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_mqqn0")
+
+[node name="Container2" type="Panel" parent="Canvas"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -164.0
+offset_top = -152.0
+offset_right = 164.0
+offset_bottom = 152.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_1611l")
+
+[node name="Apple" type="HBoxContainer" parent="Canvas/Container2"]
+layout_mode = 0
+offset_left = 60.5
+offset_top = 18.5
+offset_right = 332.5
+offset_bottom = 61.5
+alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="Canvas/Container2/Apple"]
+position = Vector2(14, 18)
+scale = Vector2(2, 2.147)
+texture = SubResource("AtlasTexture_1syrm")
+
+[node name="Label" type="Label" parent="Canvas/Container2/Apple"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.40784314, 0.27450982, 0.22352941, 1)
+theme_override_fonts/font = ExtResource("3_1611l")
+theme_override_font_sizes/font_size = 17
+text = "Collect 50 Apples"
+
+[node name="Gem" type="HBoxContainer" parent="Canvas/Container2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -107.0
+offset_top = -82.0
+offset_right = 182.5
+offset_bottom = -42.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="Canvas/Container2/Gem"]
+position = Vector2(19.5, 19.5)
+scale = Vector2(1.2, 1.012)
+texture = SubResource("AtlasTexture_g6gdi")
+
+[node name="Label" type="Label" parent="Canvas/Container2/Gem"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.40784314, 0.27450982, 0.22352941, 1)
+theme_override_fonts/font = ExtResource("3_1611l")
+theme_override_font_sizes/font_size = 17
+text = "Find 1 Emerald Gem"
+
+[node name="Snail" type="HBoxContainer" parent="Canvas/Container2"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -131.0
+offset_top = -180.5
+offset_right = 140.5
+offset_bottom = -140.5
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="Canvas/Container2/Snail"]
+position = Vector2(42.499992, 14)
+scale = Vector2(1.1, 1.123)
+texture = SubResource("AtlasTexture_htehk")
+
+[node name="Label" type="Label" parent="Canvas/Container2/Snail"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.40784314, 0.27450982, 0.22352941, 1)
+theme_override_fonts/font = ExtResource("3_1611l")
+text = "Kill 3 Snails"
+
+[node name="Orc" type="HBoxContainer" parent="Canvas/Container2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -104.0
+offset_top = 35.0
+offset_right = 109.5
+offset_bottom = 75.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="Canvas/Container2/Orc"]
+position = Vector2(17.5, -0.5)
+scale = Vector2(0.8, 0.807)
+texture = SubResource("AtlasTexture_uqjck")
+
+[node name="Label" type="Label" parent="Canvas/Container2/Orc"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.40784314, 0.27450982, 0.22352941, 1)
+theme_override_fonts/font = ExtResource("3_1611l")
+text = "Kill 3 Orcs"
+
+[node name="Boar" type="HBoxContainer" parent="Canvas/Container2"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -102.0
+offset_top = -60.5
+offset_right = 116.5
+offset_bottom = -20.5
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="Canvas/Container2/Boar"]
+position = Vector2(13.5, 17)
+scale = Vector2(1.1, 1.1)
+texture = SubResource("AtlasTexture_mqqn0")
+
+[node name="Label" type="Label" parent="Canvas/Container2/Boar"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.40784314, 0.27450982, 0.22352941, 1)
+theme_override_fonts/font = ExtResource("3_1611l")
+text = "Kill 3 Boars"
+
+[node name="Button" type="Button" parent="Canvas"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -126.75
+offset_top = -102.0
+offset_right = 126.75
+offset_bottom = -47.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.9529412, 0.8862745, 0.7411765, 1)
+theme_override_colors/font_focus_color = Color(0.9529412, 0.8862745, 0.7411765, 1)
+theme_override_colors/font_pressed_color = Color(0.9529412, 0.8862745, 0.7411765, 1)
+theme_override_colors/font_hover_color = Color(0.9529412, 0.8862745, 0.7411765, 1)
+theme_override_fonts/font = ExtResource("3_1611l")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_men0r")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_s6a58")
+theme_override_styles/hover = SubResource("StyleBoxFlat_wrhor")
+theme_override_styles/focus = SubResource("StyleBoxTexture_8c2mr")
+text = "Start"
+
+[node name="Label" type="Label" parent="Canvas"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -201.0
+offset_top = 25.0
+offset_right = 201.0
+offset_bottom = 122.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.2509804, 0.1254902, 0.03529412, 1)
+theme_override_colors/font_shadow_color = Color(0.40784314, 0.27450982, 0.22352941, 1)
+theme_override_colors/font_outline_color = Color(0.9529412, 0.8862745, 0.7411765, 1)
+theme_override_constants/shadow_offset_x = 4
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("8_uqjck")
+theme_override_font_sizes/font_size = 64
+text = "Quest"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="Canvas"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Canvas/HBoxContainer3"]
+
+[node name="Label" type="Label" parent="Canvas/HBoxContainer3"]
+layout_mode = 2
+
+[node name="Container1" type="Panel" parent="Canvas"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 48.0
+offset_top = -91.5
+offset_right = 309.0
+offset_bottom = 97.5
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_syj7s")
+
+[node name="Panel" type="Panel" parent="Canvas/Container1"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -37.5
+offset_top = -49.5
+offset_right = 36.5
+offset_bottom = 24.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_g6gdi")
+
+[node name="Sprite2D" type="Sprite2D" parent="Canvas/Container1"]
+position = Vector2(131, 82.999985)
+scale = Vector2(2.5, 2.5)
+texture = SubResource("AtlasTexture_a3hwb")
+
+[node name="Label" type="Label" parent="Canvas/Container1"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 128.0
+offset_right = 253.0
+offset_bottom = 151.0
+theme_override_colors/font_color = Color(0.40784314, 0.27450982, 0.22352941, 1)
+theme_override_fonts/font = ExtResource("3_1611l")
+theme_override_font_sizes/font_size = 13
+text = "Magic Hearts restore full health"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Container3" type="Panel" parent="Canvas"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 720.0
+offset_top = -91.5
+offset_right = 981.0
+offset_bottom = 97.5
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_syj7s")
+
+[node name="Panel2" type="Panel" parent="Canvas/Container3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -37.0
+offset_top = -45.0
+offset_right = 37.0
+offset_bottom = 29.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_g6gdi")
+
+[node name="Sprite2D" type="Sprite2D" parent="Canvas/Container3"]
+position = Vector2(131, 87.99999)
+scale = Vector2(0.45866156, 0.41796866)
+texture = SubResource("AtlasTexture_x5e0u")
+
+[node name="Label" type="Label" parent="Canvas/Container3"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 118.0
+offset_right = 267.0
+offset_bottom = 178.0
+theme_override_colors/font_color = Color(0.40784314, 0.27450982, 0.22352941, 1)
+theme_override_constants/line_spacing = -3
+theme_override_fonts/font = ExtResource("3_1611l")
+theme_override_font_sizes/font_size = 13
+text = "Portal will open once the quest is 
+completed"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Canvas/Button" to="." method="_on_button_pressed"]

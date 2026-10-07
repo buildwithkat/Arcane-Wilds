@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://b661tksjkjjxf"]
+
+[ext_resource type="Script" uid="uid://cpbbair5bkest" path="res://scripts/music_managers.gd" id="1_tn5dr"]
+[ext_resource type="AudioStream" uid="uid://c2rk3lmedot5n" path="res://assets/Sounds/nickpanek-rpg-battle-chiptune-video-game-music-346666 (1).mp3" id="2_hetdf"]
+
+[node name="Music_Managers" type="Node"]
+script = ExtResource("1_tn5dr")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_hetdf")
+autoplay = true
+bus = &"Music"
